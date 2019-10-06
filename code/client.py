@@ -6,7 +6,7 @@ import numpy as np
 
 
 class DataPushThread(threading.Thread):
-     def __init__(self, number_of_requests=10):
+     def __init__(self, number_of_requests=5000):
          super(DataPushThread, self).__init__()
          self.number_of_requests = number_of_requests
 
@@ -32,9 +32,9 @@ class DataPushThread(threading.Thread):
 
 
 
-server_address = "http://127.0.0.1:5000/"
+server_address = "http://35.228.81.87/"
 playstoreData = pd.read_csv('../data/googleplaystore.csv')
-number_of_concurrent_threads = 1
+number_of_concurrent_threads = 2
 #print("Starting ",number_of_concurrent_threads, "threads")
 prev_time = 0
 for _ in range(number_of_concurrent_threads):
