@@ -1,2 +1,77 @@
-the content of this file should be the output of the log of your own git project for this assignment
-using git log command to export your git log
+commit 247cf21b013bf4bcc7410e413404e71c07232235
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Wed Oct 9 16:31:16 2019 +0300
+
+    Added Reports images for reports
+
+commit f6dd377e19030960ec20891cde6117b0f23b5d9f
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Tue Oct 8 00:37:01 2019 +0300
+
+    Added REST APIs to search for app information and for app reviews
+
+commit f1d808395cd19a9daf12059151bf708914e9bb6b
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Tue Oct 8 00:36:05 2019 +0300
+
+    Added provision for concirrent requests to dataingest
+
+commit 26a5382f49d87e2ad99f1caed01a564fd51226de
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Mon Oct 7 13:42:53 2019 +0300
+
+    Added a dataingestion file which writes directly to mongodb without daas.
+
+commit e3c636f48b4abc479040393c0d715410651d6d11
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Mon Oct 7 13:42:37 2019 +0300
+
+    Renamed file for better understanding. rest_api.py -> mysimbdp-daas.py.
+
+commit ed20dbd63dc659158e2d052a6c5de8715632a35d
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Mon Oct 7 13:40:42 2019 +0300
+
+    Added performance Logs and added a README with setup instructions
+
+commit 33e5399e37db19d21aa96827d0c99c30813febcb
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Sun Oct 6 18:26:36 2019 +0300
+
+    Made code changes to move to GCP from local machine
+
+commit 20b144bf817e6ad7b49c292e03374c7870c6a320
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Sun Oct 6 18:21:37 2019 +0300
+
+    Made code changes to move to GCP from local machine
+
+commit ffe9bae51f8d70eb1b6140ffc2784299335729df
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Sun Oct 6 16:49:20 2019 +0300
+
+    Added multithreaded performance tests for concurrent requests
+
+commit e4e8df5a90871b63b2b78f6acb454f1a0e76bcb8
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Sun Oct 6 13:17:32 2019 +0300
+
+    Added performance tests to check large number of requests
+
+commit dc10e9524903341eb925bc7a39dd1c97e42a730c
+Author: Anand C U <anandcu3@kaaenaat.com>
+Date:   Fri Oct 4 19:00:21 2019 +0300
+
+    Added scripts to setup API endpoint and client side Data Pusher
+
+commit 004a4783dc99bfe6ece73581ed88c40e395ab308
+Author: Anand Umashankar <anandcu3@gmail.com>
+Date:   Mon Sep 30 14:13:02 2019 +0300
+
+    Adding the template
+
+commit b8e952ad4fe21a84ea7c600b78539654fabbc2f8
+Author: anandcu3 <anandcu3@gmail.com>
+Date:   Mon Sep 30 14:03:19 2019 +0300
+
+    Initial commit

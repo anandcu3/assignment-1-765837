@@ -21,7 +21,7 @@ reviewData = args.reviews
 number_of_concurrent_threads = args.number_of_concurrent_threads
 number_of_requests = args.total_number_requests//number_of_concurrent_threads
 
-server_address = "http://127.0.0.1:5000/"
+server_address = "http://35.228.81.87/"
 
 def sendRequest(row_kv_format, server_address):
     start_time = time.time()

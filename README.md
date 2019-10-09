@@ -1,3 +1,10 @@
-# Assignment Assignment_NR  Your_STUDENTID
+# Assignment 1  765837
 
-> Guide line: This is the file where you will explain the structure of your assignment delivery. Remember to replace **Assignment_NR** with the number of the assignment (e.g., 1, 2, 3, or 4) and **Your_STUDENTID** with your student number. Remove all guidelines from the template.
+The code is in `code` directory
+  Setup instructions are available at `reports/etup_README.md`
+
+data files are in the `data` directory
+
+logs are in `logs` directory
+
+`reports` directory contains the main report and the resources for the report 

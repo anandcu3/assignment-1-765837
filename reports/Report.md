@@ -11,7 +11,10 @@ The clients are enabled to make requests to the REST API and can send their data
 
 ##### 2. Explain how many nodes are needed in the deployment of mysimbdp-coredms so that this component can work property (theoretically based on the selected technology ) (1 point)
 
-There are three main nodes in my design of the system. The REST APIs, pymongo layer which is the connector to the database and the database itself.
+There are three main nodes in my design of the system.
+* The REST APIs
+* pymongo layer which is the connector to the database and
+* the database itself.
 
 ##### 3. Will you use VMs or containers for mysimbdp and explain the reasons for each component (1 point)
 
@@ -80,7 +83,7 @@ As the pie chart illustrates, the shards are almost equally split. And the bucke
 
 ##### 3. Write a mysimbdp-dataingest that takes data from your selected sources and stores the data into mysimbdp-coredms (1 point)
 
-File under code/mysimbdp-dataingest.py
+File under `code/mysimbdp-dataingest.py`
 
 ##### 4. Given your deployment environment, show the uploading performance (response time and failure) of the tests for 1,5, 10, .., n of concurrent mysimbdp-dataingest pushing data into mysimbdp-coredms (1 point)
 
@@ -102,9 +105,13 @@ Since the database is getting overloaded, the correct method to handle multiple 
 
 ##### 1. Assume that each of your tenants/users will need a dedicated mysimbdp-coredms. Design the data schema of service information for mysimbdp-coredms that can be published into an existing registry (like ZooKeeper, consul or etcd) so that you can find information about which mysimbdp-coredms for which tenants/users. (1 point)
 
+Since we have multiple coredms, one for each user, we store the User id and the corresponding mongo db sevice information in a registry system like Zookeper. ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. ZooKeeper aims at distilling the essence of these different services into a very simple interface to a centralized coordination service. The service itself is distributed and highly reliable. Then the user is matched with the right database and can connect with the corresponding db.
+
 ##### 2. Assume that the service information about mysimbdp-coredms for a tenant/users is in a file, write a program that can be used to publish the service information of mysimbdpcoredms into either etcd, consul or Zookeeper (1 point)
 
 ##### 3. Explain how you would change the implementation of mysimbdp-dataingest (in Part 2) to integrate a service discovery feature (no implementation is required) (1 point)
+
+The implementation of dataingest currently takes data from the csv file and pushes it to the DB, but after adding the service discovery feature the data ingest code first connects to Zookeper and gets the information about the service information of mysimbdpcoredms and then actually connects to the db.
 
 
 ##### 4. Explain APIs you would design for mysimbdp-daas so that any other developer who wants to implement mysimbdp-dataingest can write his/her own ingestion program to write the data into mysimbdp-coredms by calling mysimbdp-daas (1 point)
