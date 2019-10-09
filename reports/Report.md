@@ -90,7 +90,7 @@ File under `code/mysimbdp-dataingest.py`
 Tests upto 200 concurrent requests is conducted using threading in Python. There we no reported failures. However the response time increased exponentially when the number of concurrent requests increased. Below is the graph showing the response times for various number of concurrent requests. This means that when the DB is busy, the subsequent requests are queued up which explains the increase in response time.
 
 ![](data_ingest_performance.png)
-
+![](mongo_db_stats.png)
 ##### 5. Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why you do not have any problem with your deployment) (1 point)
 
 Since the database is getting overloaded, the correct method to handle multiple requests is to add a layer before the data ingest layer. For this a system like Apache Kafka can be used which is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies. A streaming platform has three key capabilities:
