@@ -7,7 +7,7 @@
 ![](designDiagram.png)
 
 The main components in the big data platform are the REST APIs built using Python, Flask and the database system MongoDB. Interaction between the REST API and the database also is in Python using Pymongo package.
-The clients are enabled to make requests to the REST API and can send their data. The REST API handles these requests and validates the data. Next it is pushed to the Database. If its a read request, then data is returned via the API.
+The clients are enabled to make requests to the REST API and can send their data. The REST API handles these requests and validates the data. Next it is pushed to the Database. If its a read request, then data is returned via the API. The python APIS are deployed on GCP and the mongoDB is also setup on cloud.
 
 ##### 2. Explain how many nodes are needed in the deployment of mysimbdp-coredms so that this component can work property (theoretically based on the selected technology ) (1 point)
 
@@ -126,7 +126,7 @@ mysimbdp-dataingest now can send data to the same REST APIs that I have from que
 
 ### Describe how to run/deploy your code
 
-[It is described in another Markdown file in the same reports directory, setup_README.md](setup_README.md)
+[It is described in another Markdown file in the same reports directory, assignment-1-765837-deployment.md](assignment-1-765837-deployment.md)
 
 ### Bonus points
 In this assignment, you do not have to develop mysimbdp-daas but if you do the implementation
